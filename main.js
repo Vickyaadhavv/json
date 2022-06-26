@@ -1,8 +1,8 @@
 fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then(Response=>Response.json())
-  .then(data=>{const res=data;
-  document.getElementById("us").innerHTML=res.userId;
-  document.getElementById("id").innerHTML=res.id;
-  document.getElementById("tit").innerHTML=res.title;
-  document.getElementById("co").innerHTML=res.completed;
+  .then(data=>{
+  document.getElementById("us").innerHTML=data.userId;
+  document.getElementById("id").innerHTML=data.id;
+  document.getElementById("tit").innerHTML=data.title;
+  document.getElementById("co").innerHTML=data.completed;
 })
