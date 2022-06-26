@@ -1,13 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then(Response=>Response.json())
   .then(data=>{console.log(data)
-    const res=
-      {
-        "userId": 1,
-        "id": 1,
-        "title": "delectus aut autem",
-        "completed": false
-      }
+    const res=data;
     
   document.getElementById("us").innerHTML=res.userId;
   document.getElementById("id").innerHTML=res.id;
